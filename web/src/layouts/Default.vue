@@ -1,12 +1,15 @@
 <template>
   <div class="layout">
     <header class="site-header">
+      <div class="logo-wrapper">
+        <Logo />
+      </div>
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/prosjekter/">Posts</g-link>
+        <g-link class="nav__link" to="/prosjekter/">Read</g-link>
         <g-link class="nav__link" to="/prosjekter/">Shop</g-link>
         <g-link class="nav__link" to="/info/">Info</g-link>
-        <ToggleTheme />
+        <!--<ToggleTheme />-->
       </nav>
     </header>
 
@@ -17,7 +20,7 @@
     </transition>
 
     <footer class="site-footer">
-      <p>(c) TUBU 2021</p>
+      <p>TUBU is a ... and the shop will launch ... and ??? - By signing up you agree to ... :)</p>
     </footer>
   </div>
 </template>
@@ -31,10 +34,12 @@ query {
 </static-query>
 
 <script>
+import Logo from '@/components/system/Logo'
 import ToggleTheme from '@/components/ToggleTheme'
 
 export default {
   components: {
+    Logo,
     ToggleTheme
   }
 }
@@ -47,6 +52,14 @@ export default {
 
 .site-header {
   padding: 1rem;
+  color: var(--color-tubu);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo-wrapper {
+    width: 14rem;
+  }
   nav {
     display: flex;
     align-items: center;
@@ -59,11 +72,11 @@ export default {
     margin-right: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 0.16em;
-  }
-}
 
-.site-main {
-  padding: 8rem 0;
+    &:hover {
+      text-decoration: underline wavy;
+    }
+  }
 }
 
 .fade-enter-active {

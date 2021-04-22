@@ -1,19 +1,16 @@
 <template>
   <section class="intro">
-    <p class="lead">Welcome to TUBU town!</p>
+    <p class="lead">Intro</p>
   </section>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .intro {
-  margin: 2rem auto;
-  padding: 0 4rem;
-  text-align: center;
+  padding: 0 1rem;
 
   .lead {
-    max-width: 20em;
     font-size: 2.6rem;
-    margin: 0 auto 6rem;
+    margin: 0;
   }
 
   img {
