@@ -138,6 +138,33 @@ input.text-input, textarea {
 	background: var(--color-background);
 	cursor: text;
 	text-align: left;
+  padding: 1rem;
+}
+
+.input-with-submit {
+  max-width: 500px;
+  margin: 3rem auto;
+  label {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: .3rem;
+    padding-left: .3rem;
+  }
+  .input-wrapper {
+    border: 2px solid var(--color-tubu);
+    border-radius: .5rem;
+    display: flex;
+    padding: .3rem;
+  }
+  .text-input {
+    border: none;
+    margin: 0;
+  }
+  .button {
+    margin: 0;
+    width: auto;
+  }
 }
 
 textarea {

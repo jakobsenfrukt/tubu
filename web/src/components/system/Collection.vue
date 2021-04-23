@@ -33,6 +33,15 @@
         <input type="text" name="textinput" id="textinput" class="text-input" placeholder="Your text here" />
       </label>
       <input type="submit" name="submitinput" id="submitinput" class="button" value="Submit" />
+      <div class="input-with-submit">
+        <label for="textinput">
+          <span>A text input</span>
+        </label>
+        <div class="input-wrapper">
+          <input type="text" name="textinput" id="textinput" class="text-input" placeholder="Your e-mail address" />
+          <input type="submit" name="submitinput" id="submitinput" class="button" value="Sign up" />
+        </div>
+      </div>
       <h3>Share your story <span class="marker">(A text area)</span></h3>
       <textarea></textarea>
     </section>
