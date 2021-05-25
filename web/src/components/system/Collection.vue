@@ -110,41 +110,6 @@
       </div>
     </section>
     <section>
-      <h2>Magazine</h2>
-      <div class="post-grid">
-        <article class="post">
-          <div class="post-image">
-            <img src="/assets/images/testing/sleepingmom.jpg" alt="Alternative text" />
-          </div>
-          <div class="post-text">
-            <h3 class="post-title">Title of this article</h3>
-            <p class="post-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor commodo tellus. Fusce iaculis varius dolor, et vulputate tortor dignissim vel.</p>
-          </div>
-          <div class="label label-magazine label-category1">Mom heroes</div>
-        </article>
-        <article class="post">
-          <div class="post-image">
-            <img src="/assets/images/testing/sleepingmom.jpg" alt="Alternative text" />
-          </div>
-          <div class="post-text">
-            <h3 class="post-title">Title of this article</h3>
-            <p class="post-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor commodo tellus. Fusce iaculis varius dolor, et vulputate tortor dignissim vel.</p>
-          </div>
-          <div class="label label-magazine label-category2">The Weekly Q</div>
-        </article>
-        <article class="post">
-          <div class="post-image">
-            <img src="/assets/images/testing/sleepingmom.jpg" alt="Alternative text" />
-          </div>
-          <div class="post-text">
-            <h3 class="post-title">Title of this article</h3>
-            <p class="post-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor commodo tellus. Fusce iaculis varius dolor, et vulputate tortor dignissim vel.</p>
-          </div>
-          <div class="label label-magazine label-recommended">Recommended reading</div>
-        </article>
-      </div>
-    </section>
-    <section>
       <h2>Newsletter template</h2>
       <div class="newsletter-template">
         <h2>Hi there</h2>
@@ -304,22 +269,6 @@ section {
   &:hover {
     box-shadow: 0 0 .6rem rgba(0, 0, 0, .2);
     cursor: pointer;
-  }
-}
-
-.post-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-}
-.post {
-  display: block;
-  position: relative;
-  &-text {
-    padding-top: 1rem;
-  }
-  &-title {
-    font-size: 1.4rem;
   }
 }
 </style>

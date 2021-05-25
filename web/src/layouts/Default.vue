@@ -2,12 +2,12 @@
   <div class="layout">
     <header class="site-header">
       <div class="logo-wrapper">
-        <Logo />
+        <g-link class="nav__link logo" to="/"><Logo /></g-link>
       </div>
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/prosjekter/">Read</g-link>
-        <g-link class="nav__link" to="/prosjekter/">Shop</g-link>
+        <g-link class="nav__link" to="/read/">Read</g-link>
+        <g-link class="nav__link" to="/shop/">Shop</g-link>
         <g-link class="nav__link" to="/info/">Info</g-link>
         <!--<ToggleTheme />-->
       </nav>
@@ -19,9 +19,7 @@
       </main>
     </transition>
 
-    <footer class="site-footer">
-      <p>TUBU is a ... and the shop will launch ... and ??? - By signing up you agree to ... :)</p>
-    </footer>
+    <Footer />
   </div>
 </template>
 
@@ -36,11 +34,13 @@ query {
 <script>
 import Logo from '@/components/system/Logo'
 import ToggleTheme from '@/components/ToggleTheme'
+import Footer from '@/components/Footer'
 
 export default {
   components: {
     Logo,
-    ToggleTheme
+    ToggleTheme,
+    Footer
   }
 }
 </script>
@@ -76,6 +76,9 @@ export default {
     &:hover {
       text-decoration: underline wavy;
     }
+    &.logo {
+      display: block;
+    }
   }
 }
 
@@ -85,13 +88,5 @@ export default {
 
 .fade-enter {
   opacity: 0;
-}
-
-.site-footer {
-  width: 100%;
-  text-align: center;
-  p {
-    margin: 1rem auto;
-  }
 }
 </style>

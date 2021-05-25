@@ -1,7 +1,15 @@
 <template>
   <Layout>
-    <Intro />
-    <Newsletter />
+    <section class="index">
+      <div class="index-grid">
+        <div class="index-column">
+          <Intro />
+        </div>
+        <div class="index-column">
+          <Newsletter />
+        </div>
+      </div>
+    </section>
   </Layout>
 </template>
 
@@ -21,5 +29,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.index {
+  padding: 2rem 0;
+  &-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    align-items: center;
+  }
+}
 </style>

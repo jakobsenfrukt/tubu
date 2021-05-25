@@ -1,20 +1,9 @@
-@font-face {
-  font-family: 'tightblack';
-  font-weight: 900;
-  font-style: normal;
-  src: url('/assets/fonts/agrandir/Agrandir-TightBlack.eot');
-  src:
-    url('/assets/fonts/agrandir/Agrandir-TightBlack.eot?#iefix') format('embedded-opentype'),
-    url('/assets/fonts/agrandir/Agrandir-TightBlack.woff2') format('woff2'),
-    url('/assets/fonts/agrandir/Agrandir-TightBlack.woff') format('woff');
-}
-
 :root {
 	--font-sans: 'agrandir', sans-serif;
   --font-serif: 'recife text', serif;
 	--font-headline: 'agrandir', sans-serif;
 
-	--font-tightblack: 'tightblack', sans-serif;
+	--font-tightblack: 'agrandir tightblack', sans-serif;
 
 	// color palette
 	--color-black: #000;

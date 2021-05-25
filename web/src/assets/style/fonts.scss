@@ -20,4 +20,15 @@
     url('/assets/fonts/recife/RecifeTextWeb-Book.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'agrandir tightblack';
+  font-weight: 900;
+  font-style: normal;
+  src: url('/assets/fonts/agrandir/Agrandir-TightBlack.eot');
+  src:
+    url('/assets/fonts/agrandir/Agrandir-TightBlack.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/agrandir/Agrandir-TightBlack.woff2') format('woff2'),
+    url('/assets/fonts/agrandir/Agrandir-TightBlack.woff') format('woff');
+}
+
 @import url("https://use.typekit.net/xky6ilz.css");
