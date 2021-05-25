@@ -1,0 +1,17 @@
+<template>
+  <div class="letter">
+    <p>Ok, so let me tell you a story. This is the beginning.</p>
+    <p>I learned to sew on my grandmother’s old Singer sewing machine.</p>
+    <p>It was from the 50’s and was so heavy that I needed help (as I was about nine) with carrying it up on our wooden living room table. I was also afraid of it, both of the electric pedal and the whirring engine, and so terrified of piercing my fingers with the jabbing needle. So at first, I only used the hand wheel, meticulously and laboriously sewing together bits of material that my mom supplied from her sewing chest — sturdy canvas cotton, slips of silk and crisp linens. But eventually, I braved the electric pedal, and old worn-down bed sheets (with cartoon patterns) became small tote bags or skirts — and my interest in design blossomed. Learning how to construct garments, to mold a silhouette and shape — and turn a flat 2D fabric into 3D, just by using small stitches with a thin needle, was beyond anything I had experienced thus far.</p>
+    <p>There have always been predominantly women in my life. Having a somewhat tumultuous childhood, I was a dance and theatre kid, raised by a single mother (a former professional ballet dancer who used to dance in the Opera) and spent a lot of time with my older sister, mimicking her every move (when she opted for oversized neon athletic gear and snowboard apparel, I — of course — did the same) — or at my grandparents house, watching my grandmother as she carefully got dressed with colorful silk scarves and small pieces of jewelry. And I learned that «femininity» (and «masculinity») in dress is many — very different — things.</p>
+    <p>To me, memories are engrained in a few specific items of clothing, and my wardrobe is a closet of stories. My mother was the one who inspired and encouraged my sewing. For a carnival costume my mom once sewed my sister an incredible red toadstool hat with white white felt spots, which I got to wear a few years later for a carnival on ice (wtf). I have honestly never felt more excited about an outfit — to this date.</p>
+    <p>I was an exceptionally scrawny and short kid when I was little. I also hit puberty late (shocker) and my sister helped me dress in baggy jeans and skater hoodies, made me a cool email account (tiny_b_girl@yahoo.com) and played me Lauryn Hill. She taught me to snowboard, and mastering quick speed and pace in the snow made me confident in my body, in spite of its boob-less appearance. A few years later, when I had blossomed a little (yay!) my mom helped me sew a version of a Calvin Klein dress worn by Natalia Vodianova that I had cut out from Vogue, with billowing, shimmery fabric.</p>
+    <p>Combined with studying and working with design, I’ve always been writing. To me, these two things are intrinsically linked. And I knew that if I ever were to create something, it needed to be an amalgamation of these two creative outlets of mine.</p>
+    <p>At the heart of this project is the love for text and textiles — in sum, storytelling. From the absolute bottom of my heart, thank you for signing up for this newsletter.</p>
+    <p>More to come, very soon.</p>
+    <p class="signature">
+      Thea<br>
+      Founder of TUBU.systems
+    </p>
+  <div>
+</template>

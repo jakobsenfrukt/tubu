@@ -76,7 +76,7 @@
       <div class="product-grid">
         <article class="product">
           <div class="product-image">
-            <img src="/images/testing/acne.jpg" alt="Alternative text" />
+            <img src="/assets/images/testing/acne.jpg" alt="Alternative text" />
           </div>
           <div class="product-text">
             <h3 class="product-title">Product name</h3>
@@ -87,7 +87,7 @@
         </article>
         <article class="product">
           <div class="product-image">
-            <img src="/images/testing/acne.jpg" alt="Alternative text" />
+            <img src="/assets/images/testing/acne.jpg" alt="Alternative text" />
           </div>
           <div class="product-text">
             <h3 class="product-title">Product name</h3>
@@ -98,7 +98,7 @@
         </article>
         <article class="product">
           <div class="product-image">
-            <img src="/images/testing/acne.jpg" alt="Alternative text" />
+            <img src="/assets/images/testing/acne.jpg" alt="Alternative text" />
           </div>
           <div class="product-text">
             <h3 class="product-title">Product name</h3>
@@ -114,7 +114,7 @@
       <div class="post-grid">
         <article class="post">
           <div class="post-image">
-            <img src="/images/testing/sleepingmom.jpg" alt="Alternative text" />
+            <img src="/assets/images/testing/sleepingmom.jpg" alt="Alternative text" />
           </div>
           <div class="post-text">
             <h3 class="post-title">Title of this article</h3>
@@ -124,7 +124,7 @@
         </article>
         <article class="post">
           <div class="post-image">
-            <img src="/images/testing/sleepingmom.jpg" alt="Alternative text" />
+            <img src="/assets/images/testing/sleepingmom.jpg" alt="Alternative text" />
           </div>
           <div class="post-text">
             <h3 class="post-title">Title of this article</h3>
@@ -134,7 +134,7 @@
         </article>
         <article class="post">
           <div class="post-image">
-            <img src="/images/testing/sleepingmom.jpg" alt="Alternative text" />
+            <img src="/assets/images/testing/sleepingmom.jpg" alt="Alternative text" />
           </div>
           <div class="post-text">
             <h3 class="post-title">Title of this article</h3>
@@ -149,7 +149,7 @@
       <div class="newsletter-template">
         <h2>Hi there</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porttitor commodo tellus, ac porta neque mollis et. Fusce iaculis varius dolor, et vulputate tortor dignissim vel.</p>
-        <img src="/images/testing/nike.png" alt="Alternative text" />
+        <img src="/assets/images/testing/nike.png" alt="Alternative text" />
       </div>
       <h1 class="logo-heading">
         Newsletter

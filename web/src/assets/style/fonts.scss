@@ -2,22 +2,22 @@
   font-family: 'Good Sans';
   font-weight: 300;
   font-style: normal;
-  src: url('/fonts/GoodSans-Light.eot');
+  src: url('/assets/fonts/goodsans/GoodSans-Light.eot');
   src:
-    url('/fonts/GoodSans-Light.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/GoodSans-Light.woff2') format('woff2'),
-    url('/fonts/GoodSans-Light.woff') format('woff');
+    url('/assets/fonts/goodsans/GoodSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/goodsans/GoodSans-Light.woff2') format('woff2'),
+    url('/assets/fonts/goodsans/GoodSans-Light.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Recife Text';
   font-weight: 400;
   font-style: normal;
-  src: url('/fonts/RecifeTextWeb-Book.eot');
+  src: url('/assets/fonts/recife/RecifeTextWeb-Book.eot');
   src:
-    url('/fonts/RecifeTextWeb-Book.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/RecifeTextWeb-Book.woff2') format('woff2'),
-    url('/fonts/RecifeTextWeb-Book.woff') format('woff');
+    url('/assets/fonts/recife/RecifeTextWeb-Book.eot?#iefix') format('embedded-opentype'),
+    url('/assets/fonts/recife/RecifeTextWeb-Book.woff2') format('woff2'),
+    url('/assets/fonts/recife/RecifeTextWeb-Book.woff') format('woff');
 }
 
 @import url("https://use.typekit.net/xky6ilz.css");
