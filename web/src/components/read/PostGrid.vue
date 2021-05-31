@@ -67,4 +67,19 @@ export default {
   grid-gap: 2rem;
   padding: 1rem;
 }
+@media (min-width: 1600px) {
+  .post-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .post-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 540px) {
+  .post-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 </style>

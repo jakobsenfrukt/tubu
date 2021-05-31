@@ -25,6 +25,7 @@ query {
   width: 100%;
   text-align: center;
   color: var(--color-tubu);
+  padding-top: 4rem;
   p {
     margin: 1rem auto;
   }

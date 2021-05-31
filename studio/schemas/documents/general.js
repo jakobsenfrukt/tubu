@@ -10,20 +10,18 @@ export default {
     },
     {
       name: 'intro',
-      type: 'simplePortableText',
-      title: 'Intro',
-      description: 'The introduction to Studio Lakayan. The first things visitors see when they visit the front page.'
+      type: 'simpleText',
+      title: 'Intro'
     },
     {
-      name: 'body',
-      type: 'bodyPortableText',
-      title: 'Body'
+      name: 'social',
+      type: 'social',
+      title: 'Social'
     },
     {
-      name: 'footertext',
-      type: 'simplePortableText',
-      title: 'Footer',
-      description: 'Text at the bottom of the page.'
+      name: 'newsletter',
+      type: 'newsletter',
+      title: 'Newsletter'
     },
     {
       name: 'description',

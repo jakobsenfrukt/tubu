@@ -28,6 +28,11 @@ export default {
       type: 'figure'
     },
     {
+      name: 'lead',
+      type: 'simpleText',
+      title: 'Lead'
+    },
+    {
       name: 'body',
       title: 'Body',
       type: 'body',

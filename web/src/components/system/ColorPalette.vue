@@ -41,23 +41,43 @@
       #F19696
     </div>
     <div class="color color1-2">
-      TUBU strong<br>
+      TUBU dark<br>
       #5858E0
     </div>
     <div class="color color2-2">
-      Sun strong<br>
+      Sun dark<br>
       #F4BB47
     </div>
     <div class="color color3-2">
-      Rose strong<br>
+      Rose dark<br>
       #D9577D
     </div>
     <div class="color color4-2">
-      Lime strong<br>
+      Lime dark<br>
       #1CF44A
     </div>
     <div class="color color5-2">
-      Peach strong<br>
+      Peach dark<br>
+      #F19696
+    </div>
+    <div class="color color1-3">
+      TUBU mellow<br>
+      #5858E0
+    </div>
+    <div class="color color2-3">
+      Sun mellow<br>
+      #F4BB47
+    </div>
+    <div class="color color3-3">
+      Rose mellow<br>
+      #C8B4B4
+    </div>
+    <div class="color color4-3">
+      Lime mellow<br>
+      #1CF44A
+    </div>
+    <div class="color color5-3">
+      Peach mellow<br>
       #F19696
     </div>
   </div>
@@ -103,19 +123,35 @@
   }
 
   .color1-2 {
-    background: var(--color-tubu-strong);
+    background: var(--color-tubu-dark);
   }
   .color2-2 {
-    background: var(--color-sun-strong);
+    background: var(--color-sun-dark);
   }
   .color3-2 {
-    background: var(--color-rose-strong);
+    background: var(--color-rose-dark);
   }
   .color4-2 {
-    background: var(--color-lime-strong);
+    background: var(--color-lime-dark);
   }
   .color5-2 {
-    background: var(--color-peach-strong);
+    background: var(--color-peach-dark);
+  }
+  
+  .color1-3 {
+    background: var(--color-tubu-mellow);
+  }
+  .color2-3 {
+    background: var(--color-sun-mellow);
+  }
+  .color3-3 {
+    background: var(--color-rose-mellow);
+  }
+  .color4-3 {
+    background: var(--color-lime-mellow);
+  }
+  .color5-3 {
+    background: var(--color-peach-mellow);
   }
 }
 </style>

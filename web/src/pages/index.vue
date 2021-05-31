@@ -38,4 +38,12 @@ export default {
     align-items: center;
   }
 }
+@media (max-width: 800px) {
+  .index {
+    padding: 2rem 0;
+    &-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}
 </style>

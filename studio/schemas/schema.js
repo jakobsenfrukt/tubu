@@ -5,11 +5,16 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // We import object and document schemas
+import general from './documents/general'
 import post from './documents/post'
 import category from './documents/category'
+import about from './documents/about'
 
 import body from './objects/body'
 import figure from './objects/figure'
+import simpleText from './objects/simpleText'
+import social from './objects/social'
+import newsletter from './objects/newsletter'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -20,11 +25,16 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
+    general,
     post,
     category,
+    about,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     body,
     figure,
+    simpleText,
+    social,
+    newsletter
   ]),
 })

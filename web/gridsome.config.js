@@ -15,9 +15,9 @@ const isProd = process.env.NODE_ENV === 'production'
 module.exports = {
   siteName: 'TUBU',
 
-  /*templates: {
-    SanityProject: '/:slug__current'
-  },*/
+  templates: {
+    SanityPost: '/read/:slug__current'
+  },
 
   plugins: [
     {
