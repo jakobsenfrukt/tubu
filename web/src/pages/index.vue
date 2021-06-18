@@ -30,7 +30,9 @@ export default {
 
 <style lang="scss" scoped>
 .index {
-  padding: 2rem 0;
+  padding: 2rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
   &-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

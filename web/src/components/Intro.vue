@@ -31,10 +31,10 @@ export default {
     line-height: 1.3;
     margin: 0;
 
-    background: -webkit-gradient(linear,left top,right top,from(var(--color-tubu)),to(var(--color-sun)));
+    /*background: -webkit-gradient(linear,left top,right top,from(var(--color-tubu)),to(var(--color-sun)));
     background-attachment: fixed;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    -webkit-background-clip: text;*/
   }
 
   img {

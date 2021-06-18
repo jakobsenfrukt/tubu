@@ -64,15 +64,15 @@ export default {
 .post-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  padding: 1rem;
+  grid-gap: 4rem;
+  padding: 4rem;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1800px) {
   .post-grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .post-grid {
     grid-template-columns: repeat(2, 1fr);
   }

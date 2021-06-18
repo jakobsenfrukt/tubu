@@ -1,6 +1,5 @@
 <template>
   <Layout>
-    <h1>Read</h1>
     <PostGrid />
   </Layout>
 </template>

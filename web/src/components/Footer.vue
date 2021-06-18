@@ -24,8 +24,9 @@ query {
 .site-footer {
   width: 100%;
   text-align: center;
-  color: var(--color-tubu);
-  padding-top: 4rem;
+  background: var(--color-sun);
+  padding: 4rem 2rem;
+  
   p {
     margin: 1rem auto;
   }
@@ -39,6 +40,7 @@ query {
       margin-right: 1.8rem;
       text-transform: uppercase;
       letter-spacing: 0.16em;
+      font-family: var(--font-sans);
     }
   }
 }

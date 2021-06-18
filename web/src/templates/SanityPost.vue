@@ -9,7 +9,7 @@
           :src="$urlForImage($page.post.mainImage, $page.metadata.sanityOptions).width(600).auto('format').url()"
         />
         <block-content
-          class="post-lead"
+          class="lead post-lead"
           :blocks="$page.post._rawLead"
           v-if="$page.post._rawLead"
         />
@@ -90,6 +90,8 @@ export default {
 
 <style lang="scss" scoped>
 .post {
+  margin-bottom: 7rem;
+  
   &-header {
     img {
       display: block;
@@ -107,14 +109,14 @@ export default {
     padding: 0 2rem;
   }
   &-lead {
-    margin: 3rem auto 4rem;
-    font-size: 1.4rem;
+    margin: 3rem auto;
+    font-size: 1.8rem;
   }
 
   &-content {
     display: flex;
     justify-content: center;
-    max-width: 36rem;
+    max-width: 38rem;
     margin: 0 auto;
     
     img {

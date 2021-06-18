@@ -21,7 +21,7 @@ export default {
     return {
       serializers: {
         types: {
-          mainImage: ({ node }) => (
+          figure: ({ node }) => (
             <figure>
               <img
                 src={this.$urlForImage(node, this.$static.metadata.sanityOptions)

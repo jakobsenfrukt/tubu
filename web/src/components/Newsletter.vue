@@ -60,6 +60,7 @@ export default {
   }
   &-lead {
     font-family: var(--font-sans);
+    letter-spacing: 0.03em;
   }
 }
 input {
