@@ -1,14 +1,21 @@
 <template>
   <article class="product">
     <div class="product-image">
-      <img src="/assets/images/testing/acne.jpg" alt="Alternative text" />
+      <g-image
+        v-if="product.mainImage"
+        class="product-image"
+        :src="$urlForImage(product.mainImage, $static.metadata.sanityOptions).height(800).width(500).auto('format').url()"
+        :alt="product.mainImage.alt"
+      />
     </div>
     <div class="product-text">
-      <h3 class="product-title">Product name</h3>
-      <p class="product-details">Fusce iaculis varius dolor, et vulputate tortor dignissim vel.</p>
-      <span class="product-price">1399</span>
+      <div class="product-header">
+        <h3 class="product-title">{{ product.title }}</h3>
+        <span class="product-price">{{ product.price }} NOK</span>
+      </div>
+      <p class="product-details">{{ product._rawDetails }}</p>
     </div>
-    <div class="label label-soldout">Sold out</div>
+    <div class="label label-new">New</div>
   </article>
 </template>
 
@@ -31,7 +38,7 @@ export default {
     BlockContent
   },
   props: {
-    post: Object
+    product: Object
   }
 }
 </script>
@@ -39,35 +46,72 @@ export default {
 <style lang="scss" scoped>
 .product {
   display: block;
-  box-shadow: 0 0 .6rem rgba(0, 0, 0, .1);
-  border-radius: .5rem;
   position: relative;
-  &-image {
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
-    height: 20rem;
-    overflow: hidden;
-    img {
-      border-top-left-radius: .5rem;
-      border-top-right-radius: .5rem;
-    }
-  }
+  border-radius: calc(var(--radius)/3);
+  transition: all .2s ease-in-out;
+
   &-text {
-    padding: 1rem;
+    padding-top: .2rem;
+  }
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
   }
   &-title {
-    font-size: 1.4rem;
-  }
-  .label {
-    position: absolute;
-    top: -.2rem;
-    right: -.3rem;
+    font-size: 1.2rem;
     margin: 0;
+    font-family: var(--font-sans);
+    font-weight: normal;
   }
-  transition: all .1s ease-in-out;
+  &-price {
+    display: block;
+    font-size: .8rem;
+  }
+  &-details {
+    font-size: .8rem;
+    display: none;
+  }
+  &-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    overflow: hidden;
+    text-indent: -9999px;
+    z-index: 0;
+  }
+
   &:hover {
-    box-shadow: 0 0 .6rem rgba(0, 0, 0, .2);
-    cursor: pointer;
+    background: rgba(0, 0, 0, .06);
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, .06);
+  }
+}
+
+.label {
+  display: inline-block;
+  background: var(--color-tubu);
+  padding: .2rem .6rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  transform: rotate(7deg);
+  position: absolute;
+  top: -.3rem;
+  right: -.3rem;
+
+  &-soldout {
+    background: var(--color-rose);
+    color: var(--color-white);
+  }
+  &-sale {
+    background: var(--color-sun);
+  }
+  &-new {
+    background: var(--color-lime);
   }
 }
 </style>

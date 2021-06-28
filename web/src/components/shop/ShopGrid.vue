@@ -1,29 +1,26 @@
 <template>
   <section class="shop-grid">
     <ShopItem
-      v-for="post in $static.posts.edges.slice(0, limit)"
-      :key="post.id"
-      :post="post.node"
+      v-for="product in $static.products.edges.slice(0, limit)"
+      :key="product.id"
+      :product="product.node"
     />
   </section>
 </template>
 
 <static-query>
 query {
-  posts: allSanityPost(sortBy: "publishedAt") {
+  products: allSanityProduct(
+    sortBy: "publishedAt",
+    filter: {active: {eq: true}}
+  ) {
     edges {
       node {
         id
         title
-        slug {
-          current
-        }
-        categories {
-          id
-          title
-        }
         publishedAt(format: "D. MMMM YYYY")
-        _rawLead
+        _rawDetails
+        price
         mainImage {
           asset {
             _id
@@ -69,23 +66,18 @@ export default {
 <style lang="scss" scoped>
 .shop-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 4rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
   padding: 4rem;
 }
-/*@media (min-width: 1800px) {
-  .post-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}*/
 @media (max-width: 1200px) {
   .post-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 540px) {
   .post-grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 </style>

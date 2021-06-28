@@ -43,6 +43,7 @@ export default {
   nav {
     display: flex;
     align-items: center;
+    justify-content: center;
     column-gap: 1rem;
   }
 
@@ -53,7 +54,7 @@ export default {
     text-transform: uppercase;
     letter-spacing: 0.16em;
     padding: .5rem 1rem .3rem;
-    background: var(--color-rose-transparent);
+    background: var(--color-sun-transparent);
     border-radius: var(--radius);
     transition: all .2s ease-in-out;
 

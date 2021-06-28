@@ -3,7 +3,7 @@
     <Hero />
     <section class="index">
       <Intro />
-      <ShopGrid limit=3 />
+      <ShopGrid limit=4 />
       <!--<LogoHeading text="Letter" />-->
       <Newsletter />
       <!--<LogoHeading text="Readings" />-->
