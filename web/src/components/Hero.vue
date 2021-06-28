@@ -1,6 +1,6 @@
 <template>
-  <section class="intro">
-    <div class="lead"><block-content :blocks="$static.general._rawIntro" /></div>
+  <section class="hero">
+    
   </section>
 </template>
 
@@ -23,16 +23,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.intro {
+.hero {
+  width: 100%;
+  min-height: 80vh;
+  margin: 1rem 0;
   padding: 0 1rem;
-  text-align: center;
+  background-image: url("/assets/images/testing/tubu-hero-sketch.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 
-  .lead {
-    font-size: 2.6rem;
-    line-height: 1.3;
-    p {
-      margin: 0 auto;
-    }
+  img {
+    display: block;
+    margin: 0 auto;
   }
 }
 </style>

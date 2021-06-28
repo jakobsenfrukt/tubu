@@ -1,6 +1,6 @@
 <template>
-  <section class="post-grid">
-    <PostItem
+  <section class="shop-grid">
+    <ShopItem
       v-for="post in $static.posts.edges.slice(0, limit)"
       :key="post.id"
       :post="post.node"
@@ -51,11 +51,11 @@ query {
 </static-query>
 
 <script>
-import PostItem from '@/components/read/PostItem'
+import ShopItem from '@/components/shop/ShopItem'
 
 export default {
   components: {
-    PostItem
+    ShopItem
   },
   props: {
     limit: {
@@ -67,7 +67,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.post-grid {
+.shop-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 4rem;

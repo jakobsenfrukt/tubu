@@ -182,9 +182,17 @@ button, .button, input, textarea {
 input.text-input, textarea {
 	border: 2px solid var(--color-tubu);
 	background: var(--color-background);
+  color: var(--color-text);
 	cursor: text;
 	text-align: left;
   padding: 1rem;
+  &::placeholder {
+    color: inherit;
+    opacity: .5;
+  }
+  &:focus {
+    border-color: var(--color-lime);
+  }
 }
 
 .input-with-submit {

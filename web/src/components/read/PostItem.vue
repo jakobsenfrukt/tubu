@@ -46,7 +46,7 @@ export default {
 .post {
   display: block;
   position: relative;
-  border-radius: .2rem;
+  border-radius: calc(var(--radius)/3);
   transition: all .2s ease-in-out;
   
   &-text {
