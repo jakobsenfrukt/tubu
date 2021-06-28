@@ -9,6 +9,7 @@ import general from './documents/general'
 import post from './documents/post'
 import category from './documents/category'
 import about from './documents/about'
+import product from './documents/product'
 
 import body from './objects/body'
 import figure from './objects/figure'
@@ -29,6 +30,7 @@ export default createSchema({
     post,
     category,
     about,
+    product,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     body,
