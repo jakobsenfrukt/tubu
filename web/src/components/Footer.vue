@@ -5,11 +5,12 @@
         TUBU is a digital resource and capsule wardrobe system for all seasons of womanhood.
       </div>
       <div>
-        <ul class="link-list social">
-          <li><strong>Contact</strong></li>
-          <li><a :href="`mailto:${$static.general.social.email}`" target="_blank">E-mail</a></li>
-          <li><a :href="`https://instagram.com/${$static.general.social.instagram}`" target="_blank">Instagram</a></li>
-          <li><a :href="`https://facebook.com/${$static.general.social.facebook}`" target="_blank">Facebook</a></li>
+        <ul class="link-list shop">
+          <li><strong>Shop</strong></li>
+          <li><a :href="`mailto:${$static.general.social.email}`" target="_blank">Spring</a></li>
+          <li><a :href="`https://instagram.com/${$static.general.social.instagram}`" target="_blank">Summer</a></li>
+          <li><a :href="`https://facebook.com/${$static.general.social.facebook}`" target="_blank">Fall</a></li>
+          <li><a :href="`https://facebook.com/${$static.general.social.facebook}`" target="_blank">Winter</a></li>
         </ul>
       </div>
       <div>
@@ -21,12 +22,11 @@
         </ul>
       </div>
       <div>
-        <ul class="link-list shop">
-          <li><strong>Shop</strong></li>
-          <li><a :href="`mailto:${$static.general.social.email}`" target="_blank">Spring</a></li>
-          <li><a :href="`https://instagram.com/${$static.general.social.instagram}`" target="_blank">Summer</a></li>
-          <li><a :href="`https://facebook.com/${$static.general.social.facebook}`" target="_blank">Fall</a></li>
-          <li><a :href="`https://facebook.com/${$static.general.social.facebook}`" target="_blank">Winter</a></li>
+        <ul class="link-list social">
+          <li><strong>Contact</strong></li>
+          <li><a :href="`mailto:${$static.general.social.email}`" target="_blank">E-mail</a></li>
+          <li><a :href="`https://instagram.com/${$static.general.social.instagram}`" target="_blank">Instagram</a></li>
+          <li><a :href="`https://facebook.com/${$static.general.social.facebook}`" target="_blank">Facebook</a></li>
         </ul>
       </div>
       <div></div>
@@ -34,6 +34,7 @@
         <a :href="`mailto:${$static.general.social.email}`" target="_blank">Privacy policy</a>
       </div>
     </div>
+    <FooterTotem />
   </footer>
 </template>
 
@@ -49,17 +50,29 @@ query {
 }
 </static-query>
 
+<script>
+import FooterTotem from '@/components/system/logo/FooterTotem'
+
+export default {
+  components: {
+    FooterTotem
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .site-footer {
   width: 100%;
   background: var(--color-sun);
   color: var(--color-tubu);
   padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
   
   &-content {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    column-gap: 3rem;
+    gap: 3rem;
     width: 100%;
     max-width: 64rem;
     margin: 0 auto;
@@ -85,6 +98,30 @@ query {
       text-transform: uppercase;
       letter-spacing: 0.16em;
       font-family: var(--font-sans);
+    }
+  }
+}
+@media (max-width: 900px) {
+  .site-footer {
+    &-content {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+    .intro {
+      grid-column: span 4;
+      padding-right: 50%;
+    }
+  }
+}
+@media (max-width: 540px) {
+  .site-footer {
+    &-content {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    .intro {
+      grid-column: span 2;
+      padding-right: 50%;
     }
   }
 }

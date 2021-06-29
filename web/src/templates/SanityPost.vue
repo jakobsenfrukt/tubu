@@ -91,6 +91,7 @@ export default {
 <style lang="scss" scoped>
 .post {
   margin-bottom: 7rem;
+  padding-top: 4rem;
   
   &-header {
     img {
@@ -124,6 +125,17 @@ export default {
       margin-left: calc(var(--space) * -1);
       display: block;
       max-width: none;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .post {
+    &-title {
+      padding: 2rem 6rem 0;
+      font-size: 2rem;
+    }
+    &-lead, &-content {
+      padding: 0 2rem;
     }
   }
 }

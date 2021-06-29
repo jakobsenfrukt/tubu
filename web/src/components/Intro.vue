@@ -24,7 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 .intro {
-  padding: 0 1rem;
+  padding: 1rem;
   text-align: center;
 
   .lead {
@@ -32,6 +32,13 @@ export default {
     line-height: 1.3;
     p {
       margin: 0 auto;
+    }
+  }
+}
+@media (max-width: 540px) {
+  .intro {
+    .lead {
+      font-size: 2rem;
     }
   }
 }

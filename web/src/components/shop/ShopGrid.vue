@@ -71,13 +71,15 @@ export default {
   padding: 4rem;
 }
 @media (max-width: 1200px) {
-  .post-grid {
+  .shop-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 540px) {
-  .post-grid {
+@media (max-width: 640px) {
+  .shop-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
   }
 }
 </style>

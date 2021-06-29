@@ -83,9 +83,10 @@ export default {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 640px) {
   .post-grid {
     grid-template-columns: repeat(1, 1fr);
+    padding: 2rem;
   }
 }
 </style>

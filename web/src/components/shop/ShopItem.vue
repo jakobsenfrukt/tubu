@@ -114,4 +114,14 @@ export default {
     background: var(--color-lime);
   }
 }
+@media (max-width: 900px) {
+  .product {
+    &-header {
+      display: block;
+    }
+    &-price {
+      float: right;
+    }
+  }
+}
 </style>

@@ -1,6 +1,7 @@
 <template>
   <div class="layout">
     <Header />
+    <Letters />
 
     <transition name="fade" appear>
       <main class="site-main">
@@ -23,11 +24,13 @@ query {
 <script>
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import Letters from '@/components/system/logo/Letters'
 
 export default {
   components: {
     Header,
-    Footer
+    Footer,
+    Letters
   }
 }
 </script>
@@ -39,6 +42,7 @@ export default {
 
 .site-main {
   margin-top: 3rem;
+  min-height: 180vh;
 }
 
 .fade-enter-active {

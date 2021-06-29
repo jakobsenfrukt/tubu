@@ -35,7 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 .about {
-  padding-top: 7rem;
+  padding: 7rem 2rem;
   &-header {
     img {
       display: block;
