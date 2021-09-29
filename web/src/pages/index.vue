@@ -1,33 +1,22 @@
 <template>
-  <Layout>
-    <Hero />
+  <TeaserLayout>
     <section class="index">
-      <Intro />
-      <ShopGrid limit=4 />
-      <!--<LogoHeading text="Letter" />-->
-      <Newsletter />
-      <!--<LogoHeading text="Readings" />-->
-      <PostGrid limit=3 />
+      <Circles class="circles" />
+      <Newsletter class="newsletter" />
     </section>
-  </Layout>
+  </TeaserLayout>
 </template>
 
 <script>
-import Hero from '~/components/Hero'
-import Intro from '~/components/Intro'
-import Newsletter from '~/components/Newsletter-v2'
-import PostGrid from '~/components/read/PostGrid'
-import ShopGrid from '~/components/shop/ShopGrid'
-import LogoHeading from '~/components/system/LogoHeading'
+import TeaserLayout from '~/layouts/TeaserLayout'
+import Circles from '~/components/teaser/Circles'
+import Newsletter from '~/components/teaser/Newsletter'
 
 export default {
   components: {
-    Hero,
-    Intro,
-    Newsletter,
-    PostGrid,
-    ShopGrid,
-    LogoHeading
+    TeaserLayout,
+    Circles,
+    Newsletter
   },
   metaInfo: {
     title: 'Welcome'
@@ -39,10 +28,13 @@ export default {
 .index {
   padding: 2rem 2rem;
   margin: 0 auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
-@media (max-width: 800px) {
-  .index {
-    padding: 2rem 0;
-  }
+.circles {
+  width: 20rem;
+  max-width: 50%;
+  margin: auto;
 }
 </style>
