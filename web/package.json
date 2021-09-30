@@ -12,10 +12,10 @@
     "dotenv": "^8.2.0",
     "gridsome": "^0.7.23",
     "gridsome-source-sanity": "^1.0.5",
-    "sanity-blocks-vue-component": "^0.1.0"
+    "sanity-blocks-vue-component": "^0.1.0",
+    "sass": "^1.42.1"
   },
   "devDependencies": {
-    "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2"
   }
 }
