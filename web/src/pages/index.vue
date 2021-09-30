@@ -2,7 +2,7 @@
   <TeaserLayout>
     <section class="index">
       <Circles class="circles" />
-      <Newsletter class="newsletter" />
+      <!--<Newsletter class="newsletter" />-->
     </section>
   </TeaserLayout>
 </template>

@@ -1,24 +1,23 @@
 <template>
   <header class="site-header">
     <nav class="nav nav-main">
-      <g-link class="nav__link" to="/">Home</g-link>
-      <g-link class="nav__link" to="/shop/">Shop</g-link>
-      <g-link class="nav__link" to="/read/">Read</g-link>
-      <g-link class="nav__link" to="/info/">Info</g-link>
+      <a class="nav__link" :href="`https://instagram.com/${$static.general.social.instagram}`" target="_blank">Instagram</a>
       <!--<ToggleTheme />-->
     </nav>
-
-    <div class="nav-mobile" :class="{showMenu: showMenu}">
-      <button class="menu-toggle" @click="showMenu = !showMenu">Menu</button>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/shop/">Shop</g-link>
-        <g-link class="nav__link" to="/read/">Read</g-link>
-        <g-link class="nav__link" to="/info/">Info</g-link>
-      </nav>
-    </div>
   </header>
 </template>
+
+<static-query>
+query {
+  general: sanityGeneral (id: "general") {
+    social {
+      email
+      instagram
+      facebook
+    }
+  }
+}
+</static-query>
 
 <script>
 import Logo from '@/components/system/Logo'
@@ -52,7 +51,7 @@ export default {
 }
 .nav-main {
   position: fixed;
-  top: 0;
+  bottom: 1rem;
   left: 0;
   right: 0;
   z-index: 1000;
