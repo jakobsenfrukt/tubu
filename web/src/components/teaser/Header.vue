@@ -51,7 +51,7 @@ export default {
 }
 .nav-main {
   position: fixed;
-  bottom: 1rem;
+  top: 1rem;
   left: 0;
   right: 0;
   z-index: 1000;
