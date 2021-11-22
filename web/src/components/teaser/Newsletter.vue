@@ -5,7 +5,7 @@
       <form action="https://systems.us1.list-manage.com/subscribe/post?u=98560f9ebf97000fbec00bc20&amp;id=ae803c9141" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
           <label for="mce-EMAIL">
-            <h2 class="newsletter-heading">Subscribe to our bi-weekly essay</h2>
+            <h2 class="newsletter-heading">Subscribe to our <br />bi-weekly essay</h2>
           </label>
           <div class="input-with-submit">
             <label class="hidden-label" for="textinput">
@@ -57,7 +57,7 @@ export default {
 <style lang="scss" scoped>
 .newsletter {
   margin: 1rem auto;
-  padding: 3.6rem 3rem .5rem;
+  padding: 3.6rem 0 .5rem;
   border-radius: .5rem;
   width: 100%;
 
@@ -65,6 +65,11 @@ export default {
     font-size: 2rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
+    text-align: center;
+
+    br {
+      display: none;
+    }
   }
   &-lead {
     font-family: var(--font-sans);
@@ -74,7 +79,7 @@ export default {
 }
 .button {
   border: none;
-  letter-spacing: 0.16em;
+  letter-spacing: var(--letter-spacing);
   margin-bottom: 2rem;
 }
 .input-with-submit {
@@ -95,14 +100,12 @@ export default {
     padding: 1rem 1rem .8rem;
     background: transparent;
     color: var(--color-black);
-    letter-spacing: .06em;
     font-size: inherit;
     max-width: none;
   }
   .button {
     margin: 0;
     width: auto;
-    letter-spacing: .06em;
     font-size: inherit;
     border-radius: 5rem;
     border-top-left-radius: 0;
@@ -121,6 +124,30 @@ export default {
 @media (max-width: 800px) {
   .newsletter {
     max-width: none;
+     &-heading {
+      br {
+        display: block;
+      }
+    }
+  }
+  .input-with-submit {
+    .input-wrapper {
+      display: block;
+      border: none;
+    }
+    .text-input {
+      border: 1px solid var(--color-black);
+      border-radius: 5rem;
+      margin: 0 0 1rem;
+      padding: 1rem 1.5rem 1rem;
+      text-align: center;
+    }
+    .button {
+      width: 100%;
+      border-top-left-radius: 5rem;
+      border-bottom-left-radius: 5rem;
+      max-width: none;
+    }
   }
 }
 </style>

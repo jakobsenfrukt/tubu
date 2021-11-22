@@ -1,53 +1,56 @@
 :root {
-	--font-sans: 'agrandir', sans-serif;
-  --font-serif: 'recife text', serif;
+  --font-sans: "good sans", sans-serif;
+  --font-serif: "recife text", serif;
 
-	--font-tightblack: 'agrandir tightblack', sans-serif;
+  --font-tightblack: "agrandir tightblack", sans-serif;
 
-	// color palette
-	--color-black: #000;
-	--color-white: #fff;
+  // color palette
+  --color-black: #000;
+  --color-white: #fff;
 
-	--color-tubu: #5858E0;
-	--color-sun: #F4BB47;
-	--color-rose: #D9577D;
-	--color-lime: #1CF44A;
-	--color-peach: #F19696;
+  --color-tubu: #5858e0;
+  --color-sun: #f4bb47;
+  --color-rose: #d9577d;
+  --color-lime: #1cf44a;
+  --color-peach: #f19696;
 
-	--color-tubu-light: #C2C2FB;
-	--color-sun-light: #ffe0a1;
-	--color-rose-light: #F987C5;
-	--color-lime-light: #92ffaa;
-	--color-peach-light: #f8c0c0;
+  --color-tubu-light: #c2c2fb;
+  --color-sun-light: #ffe0a1;
+  --color-rose-light: #f987c5;
+  --color-lime-light: #92ffaa;
+  --color-peach-light: #f8c0c0;
 
-	--color-tubu-dark: #200AF2;
-	--color-sun-dark: #ffaa00;
-	--color-rose-dark: #8d0e54;
-	--color-lime-dark: #157c2c;
-	--color-peach-dark: #b66d60;
+  --color-tubu-dark: #200af2;
+  --color-sun-dark: #ffaa00;
+  --color-rose-dark: #8d0e54;
+  --color-lime-dark: #157c2c;
+  --color-peach-dark: #b66d60;
 
-	--color-tubu-mellow: #A1A0C8;
-	--color-sun-mellow: #000;
-	--color-rose-mellow: #000;
-	--color-lime-mellow: #6D8873;
-	--color-peach-mellow: #C8B4B4;
+  --color-tubu-mellow: #a1a0c8;
+  --color-sun-mellow: #000;
+  --color-rose-mellow: #000;
+  --color-lime-mellow: #6d8873;
+  --color-peach-mellow: #c8b4b4;
 
-	--color-tubu-transparent: #5858E044;
-	--color-sun-transparent: #F4BB4788;
-	--color-rose-transparent: #D9577D88;
-	--color-lime-transparent: #1CF44A88;
-	--color-peach-transparent: #F1969688;
+  --color-tubu-transparent: #5858e044;
+  --color-sun-transparent: #f4bb4788;
+  --color-rose-transparent: #d9577d88;
+  --color-lime-transparent: #1cf44a88;
+  --color-peach-transparent: #f1969688;
 
-	--radius: 6px;
-	--logo-width: 5rem;
+  --radius: 6px;
+  --logo-width: 5rem;
+  --site-padding: 6rem;
+
+  --letter-spacing: 0.05em;
 }
 
 // light default theme
 body {
- 	--color-background: var(--color-white);
- 	--color-text: var(--color-black);
- 	--color-link: var(--color-tubu);
-	--color-hover: var(--color-tubu);
+  --color-background: var(--color-white);
+  --color-text: var(--color-black);
+  --color-link: var(--color-tubu);
+  --color-hover: var(--color-tubu);
 }
 
 /*
@@ -58,3 +61,10 @@ body[data-theme="dark"] {
  	--color-link: var(--color-tubu);
 	--color-hover: var(--color-tubu);
 }*/
+
+@media (max-width: 600px) {
+  :root {
+    --logo-width: 3rem;
+    --site-padding: 2rem;
+  }
+}

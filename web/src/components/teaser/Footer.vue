@@ -72,6 +72,7 @@ export default {
 }
 .nav-button {
   font-size: inherit;
+  font-family: var(--font-sans);
   border: 1px solid var(--color-black);
   border-radius: 2em;
   padding: 0 1rem;
@@ -82,14 +83,28 @@ export default {
   line-height: 1;
   text-decoration: none;
   background: transparent;
+  cursor: pointer;
   span {
     display: block;
-    padding-top: .2em;
+    padding-top: .1em;
     font-family: var(--font-sans);
     font-size: inherit;
     color: var(--color-black);
     text-transform: uppercase;
-    letter-spacing: .1em;
+    letter-spacing: var(--letter-spacing);
+  }
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    position: absolute;
+  }
+  .nav-footer {
+    flex-direction: column;
+    padding: 0;
+  }
+  .nav-button {
+    margin: .25rem 0;
   }
 }
 </style>

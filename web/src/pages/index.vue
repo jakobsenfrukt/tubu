@@ -63,7 +63,7 @@ export default {
 section {
   min-height: 100vh;
   margin: 0 auto;
-  padding: 0 6rem;
+  padding: 0 var(--site-padding);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -71,7 +71,7 @@ section {
   &:before, &:after {
     content: "";
     display: block;
-    height: 8rem;
+    height: 5rem;
   }
 }
 .circles {
@@ -84,14 +84,39 @@ h1 {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 3rem;
+
 }
 
 .gallery {
   .images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 3rem;
+    gap: 3rem;
     padding-bottom: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  section {
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 var(--site-padding);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    &:before, &:after {
+      content: "";
+      display: block;
+      height: 1rem;
+    }
+  }
+  h1 span {
+    display: block;
+  }
+  .gallery {
+    .images {
+      grid-template-columns: 1fr;
+    }
   }
 }
 </style>

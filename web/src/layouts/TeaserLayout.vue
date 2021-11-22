@@ -9,6 +9,7 @@
     </transition>
 
     <Footer />
+    <Totop />
     <Letters />
   </div>
 </template>
@@ -25,12 +26,14 @@ query {
 import Header from '@/components/teaser/Header'
 import Footer from '@/components/teaser/Footer'
 import Letters from '@/components/teaser/Letters'
+import Totop from '@/components/tools/Totop'
 
 export default {
   components: {
     Header,
     Footer,
-    Letters
+    Letters,
+    Totop
   }
 }
 </script>
@@ -48,4 +51,5 @@ export default {
 .fade-enter {
   opacity: 0;
 }
+
 </style>

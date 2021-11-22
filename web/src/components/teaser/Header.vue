@@ -96,11 +96,17 @@ export default {
     line-height: 1;
     span {
       display: block;
-      padding-top: .2em;
+      padding-top: .1em;
       font-family: var(--font-sans);
       font-size: inherit;
       color: var(--color-black);
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-main {
+    padding: 0;
   }
 }
 </style>
