@@ -1,13 +1,15 @@
 <template>
   <div class="layout">
     <Header />
-    <Letters />
 
     <transition name="fade" appear>
       <main class="site-main">
         <slot/>
       </main>
     </transition>
+
+    <Footer />
+    <Letters />
   </div>
 </template>
 
@@ -37,10 +39,6 @@ export default {
 .layout {
   margin: 0 auto;
   font-size: 1.2rem;
-}
-
-.site-main {
-  margin-top: 3rem;
 }
 
 .fade-enter-active {

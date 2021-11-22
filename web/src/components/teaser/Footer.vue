@@ -1,15 +1,18 @@
 <template>
   <footer class="site-footer">
     <div class="site-footer-content">
-      <div class="intro">
-        TUBU is a digital resource and capsule wardrobe system for all seasons of womanhood.
-      </div>
-      <div>
-        <ul class="link-list social">
-          <li><a :href="`https://instagram.com/${$static.general.social.instagram}`" target="_blank">Instagram</a></li>
-          <li><a :href="`https://facebook.com/${$static.general.social.facebook}`" target="_blank">Facebook</a></li>
-        </ul>
-      </div>
+      <nav class="nav nav-footer">
+        <button class="nav-button" @click="toAnchor('#about')">
+          <span>About</span>
+        </button>
+        <button class="nav-button" @click="toAnchor('#newsletter')">
+          <span>Newsletter</span>
+        </button>
+        <a class="nav-button" :href="`https://instagram.com/${$static.general.social.instagram}`" target="_blank">
+          <span>Instagram</span>
+        </a>
+        <!--<ToggleTheme />-->
+      </nav>
     </div>
   </footer>
 </template>
@@ -32,7 +35,14 @@ import FooterTotem from '@/components/system/logo/FooterTotem'
 export default {
   components: {
     FooterTotem
-  }
+  },
+  methods: {
+    toAnchor(anchor) {
+      document.querySelector(anchor).scrollIntoView({
+          behavior: 'smooth'
+      })
+    }
+  },
 }
 </script>
 
@@ -40,64 +50,46 @@ export default {
 .site-footer {
   width: 100%;
   color: var(--color-tubu);
-  padding: 4rem 2rem;
-  position: relative;
-  overflow: hidden;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
   
   &-content {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 3rem;
-    width: 100%;
-    max-width: 64rem;
-    margin: 0 auto;
-  }
-
-  .intro {
-    grid-column: span 2;
-  }
-
-  .link-list {
-    list-style: none;
-
-    strong {
-      font-family: var(--font-tightblack);
-      font-size: 1.2rem;
-    }
-
-    li {
-      display: block;
-      color: inherit;
-      text-decoration: none;
-      margin-right: 1.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-family: var(--font-sans);
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
-@media (max-width: 900px) {
-  .site-footer {
-    &-content {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2rem;
-    }
-    .intro {
-      grid-column: span 4;
-      padding-right: 50%;
-    }
-  }
+.nav-footer {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  column-gap: .2em;
 }
-@media (max-width: 540px) {
-  .site-footer {
-    &-content {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
-    .intro {
-      grid-column: span 2;
-      padding-right: 50%;
-    }
+.nav-button {
+  font-size: inherit;
+  border: 1px solid var(--color-black);
+  border-radius: 2em;
+  padding: 0 1rem;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  background: transparent;
+  span {
+    display: block;
+    padding-top: .2em;
+    font-family: var(--font-sans);
+    font-size: inherit;
+    color: var(--color-black);
+    text-transform: uppercase;
+    letter-spacing: .1em;
   }
 }
 </style>

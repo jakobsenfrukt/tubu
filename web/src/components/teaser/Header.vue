@@ -1,7 +1,22 @@
 <template>
   <header class="site-header">
     <nav class="nav nav-main">
-      <a class="nav__link" :href="`https://instagram.com/${$static.general.social.instagram}`" target="_blank">Instagram</a>
+      <g-link class="nav__link nav__link--logo" to="/" target="_blank">
+        <div class="logo-circles">
+          <div class="letter">
+            <span>T</span>
+          </div>
+          <div class="letter">
+            <span>U</span>
+          </div>
+          <div class="letter">
+            <span>B</span>
+          </div>
+          <div class="letter">
+            <span>U</span>
+          </div>
+        </div>
+      </g-link>
       <!--<ToggleTheme />-->
     </nav>
   </header>
@@ -20,16 +35,10 @@ query {
 </static-query>
 
 <script>
-import Logo from '@/components/system/Logo'
-import Totem from '@/components/system/Totem'
-import Letters from '@/components/system/logo/Letters'
 import ToggleTheme from '@/components/ToggleTheme'
 
 export default {
   components: {
-    Logo,
-    Totem,
-    Letters,
     ToggleTheme
   },
   data() {
@@ -51,7 +60,7 @@ export default {
 }
 .nav-main {
   position: fixed;
-  top: 1rem;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
@@ -65,85 +74,32 @@ export default {
 }
 
 .nav__link {
-  display: inline-block;
-  color: inherit;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  padding: .5rem 1rem .3rem;
-  background: var(--color-sun-transparent);
-  border-radius: var(--radius);
-  transition: all .2s ease-in-out;
-
-  &:hover {
-    background: rgba(255, 47, 203, 0.2);
-  }
-  &.logo {
-    display: block;
+  &--logo {
+    text-decoration: none;
   }
 }
-.nav-mobile {
-  display: none;
-}
-.menu-toggle {
-  width: auto;
-  margin: 0 auto;
-  color: inherit;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  padding: .5rem 1rem .3rem;
-  background: transparent;
-  border-radius: var(--radius);
-  transition: all .2s ease-in-out;
 
-  &:hover {
-    background: transparent;
-  }
-}
-@media (max-width: 640px) {
-  .nav-main {
-    display: none;
-  }
-  .nav-mobile {
-    display: block;
-    height: 2rem;
-    background: var(--color-sun-transparent);
-    border-radius: var(--radius);
-    overflow: hidden;
-    position: fixed;
-    top: 1rem;
-    left: 0;
-    right: 0;
-    width: 6rem;
-    margin: 0 auto;
-    z-index: 1000;
-    transition: all .4s ease-in-out;
-    &.showMenu {
-      height: 100%;
-      width: 100%;
-      top: 0;
-      .nav {
-        visibility: visible;
-      }
-      .menu-toggle {
-        margin-top: 1rem;
-      }
-    }
-
-    .nav {
-      visibility: hidden;
-      height: 100%;
-      padding-bottom: 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      &__link {
-        font-size: 2rem;
-        background: white;
-      }
+.logo-circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  column-gap: .1em;
+  .letter {
+    border: 1px solid var(--color-black);
+    border-radius: 2em;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    span {
+      display: block;
+      padding-top: .2em;
+      font-family: var(--font-sans);
+      font-size: inherit;
+      color: var(--color-black);
     }
   }
 }
