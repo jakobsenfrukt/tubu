@@ -1,20 +1,20 @@
 <template>
-  <header class="site-header">
+  <header class="site-header" tabindex="-1">
     <nav class="nav nav-main">
       <g-link class="nav__link nav__link--logo" to="/" target="_blank">
         <div class="logo-circles">
-          <div class="letter">
+          <span class="letter">
             <span>T</span>
-          </div>
-          <div class="letter">
+          </span>
+          <span class="letter">
             <span>U</span>
-          </div>
-          <div class="letter">
+          </span>
+          <span class="letter">
             <span>B</span>
-          </div>
-          <div class="letter">
+          </span>
+          <span class="letter">
             <span>U</span>
-          </div>
+          </span>
         </div>
       </g-link>
       <!--<ToggleTheme />-->

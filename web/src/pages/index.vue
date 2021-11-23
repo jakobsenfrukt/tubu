@@ -13,13 +13,13 @@
     <section class="gallery" id="gallery1">
       <div class="images">
         <figure>
-          <img src="/assets/images/teaser/IMG_2672.jpeg" />
+          <img src="/assets/images/teaser/IMG_2672.jpeg" alt="An assortment of knitted samples from our factory in Italy in colors such as sand, lilac and peach. Photo." />
         </figure>
         <figure>
-          <img src="/assets/images/teaser/IMG_2777.jpeg" />
+          <img src="/assets/images/teaser/IMG_2777.jpeg" alt="A magical little pink knitting machine at our factory in Italy that exclusively knits ribbons. Photo." />
         </figure>
         <figure>
-          <img src="/assets/images/teaser/IMG_2769.jpeg" />
+          <img src="/assets/images/teaser/IMG_2769.jpeg" alt="Stacked cones of yarn at our factory in Italy in a myriad of colors such as black, orange, pink and yellow. Photo." />
         </figure>
       </div>
     </section>
@@ -29,13 +29,13 @@
     <section class="gallery" id="gallery2">
       <div class="images">
         <figure>
-          <img src="/assets/images/teaser/IMG_2775.jpeg" />
+          <img src="/assets/images/teaser/IMG_2775.jpeg" alt="A standard cardboard box with the magical words «Made in Italy» printed on it. Photo." />
         </figure>
         <figure>
-          <img src="/assets/images/teaser/IMG_2766.jpeg" />
+          <img src="/assets/images/teaser/IMG_2766.jpeg" alt="A photo of a waving Thea Urdal, the founder of TUBU.systems, a woman with blond hair and a protective mask. Photo." />
         </figure>
         <figure>
-          <img src="/assets/images/teaser/IMG_2904.jpeg" />
+          <img src="/assets/images/teaser/IMG_2904.jpeg" alt="Shelves of textiles in colors such as light blue, red and pink from Milan. Photo." />
         </figure>
       </div>
     </section>

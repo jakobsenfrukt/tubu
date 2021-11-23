@@ -9,10 +9,10 @@
           </label>
           <div class="input-with-submit">
             <label class="hidden-label" for="textinput">
-              <span>Subscribe</span>
+              <span>Subscribe to our bi-weekly essay</span>
             </label>
             <div class="input-wrapper">
-              <input type="email" value="" name="EMAIL" class="text-input email" id="mce-EMAIL" placeholder="Enter your e-mail" required>
+              <input type="email" value="" name="mce-EMAIL" class="text-input email" id="mce-EMAIL" placeholder="Enter your e-mail" required aria-label="Enter your email to subscribe to our bi-weekly essay">
               <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_98560f9ebf97000fbec00bc20_ae803c9141" tabindex="-1" value=""></div>
 
