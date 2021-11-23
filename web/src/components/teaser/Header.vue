@@ -1,5 +1,5 @@
 <template>
-  <header class="site-header" tabindex="-1">
+  <header class="site-header" aria-hidden="true">
     <nav class="nav nav-main">
       <g-link class="nav__link nav__link--logo" to="/" target="_blank">
         <div class="logo-circles">
